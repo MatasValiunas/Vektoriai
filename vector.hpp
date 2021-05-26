@@ -203,7 +203,7 @@ T& Vector<T>::back(){
 template<class T>
 void Vector<T>::push_back(const T & v){
     if (_size >= _capacity)
-        reserve(_capacity +5);
+        reserve(_capacity + 1000);
     elem[_size++] = v;
 }
 
